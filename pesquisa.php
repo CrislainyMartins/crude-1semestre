@@ -75,16 +75,32 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-body"> <!-- a partir daqui começamos a excluir-->
+        <form action="excluir.php" method="post">
+          <p>deseja reslamente excluir<b id="nome_pessoa"> nome da pessoa</b>?</p>
+        </form>
       </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+        <input type="hidden" name="nome" id="nome_pessoa1">
+        <input type="hidden" name="id" id="cod_pessoa">
         <button type="button" class="btn btn-primary">Sim</button>
       </div>
     </div>
   </div>
 </div>
+
+       <!-- utilizando javaScript-->
+         <!-- função para epgar dados do id e de nome -->
+<script>
+  function pegar_dados(id,nome){
+    document.getElementById("nome_pessoa").innerHTML = nome //
+    document.getElementById("nome_pessoa1").value = nome
+    document.getElementById("cod_pessoa").value = id
+  }
+
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
