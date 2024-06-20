@@ -39,9 +39,12 @@
             
 
           </div>
+          <button class="btn btn-success"><a href="pesquisa.php" style="text-decoration: none; color:white;">Voltar</a></button>
       </div>
     </div>
   </div>
+
+
 
 
 

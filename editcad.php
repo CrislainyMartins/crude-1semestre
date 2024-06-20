@@ -1,3 +1,4 @@
+
 <?php 
 include ("conexao.php");
 $id= $_POST['id'];
@@ -15,4 +16,13 @@ if ($conexao=mysqli_query($conexao, $sql)){
 else{
     echo"erro ao se cadastrar com o banco".mysqli_connect_error($conexao);
 }
+
 ?>
+
+
+
+
+
+
+    
+
